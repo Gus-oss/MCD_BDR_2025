@@ -1,5 +1,0 @@
-Hola mundo
-Este es mi primer commit en git  
-hola
-
-Este es mi tercer commit en git 
