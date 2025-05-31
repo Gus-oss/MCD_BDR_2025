@@ -9,11 +9,31 @@ La base de datos de Covid-19 seleccionada es la base historica con fecha de publ
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-<pre> ```mermaid 
-erDiagram PACIENTE ||--|| UBICACION : resides_in PACIENTE ||--|| SERVICIOS_SALUD : receives PACIENTE ||--|| COMORBILIDADES : has PACIENTE ||--|| DIAGNOSTICO : gets PACIENTE { string ID_REGISTRO int SEXO int EDAD string NACIONALIDAD int EMBARAZO } UBICACION { int ENTIDAD_RES int MUNICIPIO_RES int ENTIDAD_NAC string PAIS_NACIONALIDAD string PAIS_ORIGEN } SERVICIOS_SALUD { int SECTOR int ENTIDAD_UM int TIPO_PACIENTE } COMORBILIDADES { int DIABETES int EPOC int ASMA int INMUSUPR int HIPERTENSION int OBESIDAD int RENAL_CRONICA int TABAQUISMO } DIAGNOSTICO { int RESULTADO_PCR int RESULTADO_ANTIGENO int CLASIFICACION_FINAL_COVID int CLASIFICACION_FINAL_FLU int UCI } 
-``` </pre>
+    PACIENTE["Paciente"]
+    UBICACION["Ubicación"]
+    SERVICIO["Servicio de Salud"]
+    DIAGNOSTICO["Diagnóstico"]
+    COMORBILIDADES["Comorbilidades"]
+
+    PACIENTE --> UBICACION
+    PACIENTE --> SERVICIO
+    PACIENTE --> DIAGNOSTICO
+    PACIENTE --> COMORBILIDADES
+
+    UBICACION --> ENTIDAD_RES["Entidad de Residencia"]
+    UBICACION --> MUNICIPIO_RES["Municipio de Residencia"]
+
+    SERVICIO --> SECTOR["Sector"]
+    SERVICIO --> ENTIDAD_UM["Entidad UM"]
+
+    DIAGNOSTICO --> RESULTADO_PCR["Resultado PCR"]
+    DIAGNOSTICO --> RESULTADO_ANTIGENO["Resultado Antígeno"]
+    DIAGNOSTICO --> CLASIFICACION_FINAL_COVID["Clasificación COVID"]
+
+    COMORBILIDADES --> DIABETES["Diabetes"]
+    COMORBILIDADES --> ASMA["Asma"]
+    COMORBILIDADES --> HIPERTENSION["Hipertensión"]
+    COMORBILIDADES --> OBESIDAD["Obesidad"]
+
+````
+
