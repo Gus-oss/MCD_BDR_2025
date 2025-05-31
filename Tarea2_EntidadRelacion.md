@@ -9,8 +9,8 @@ La base de datos de Covid-19 seleccionada es la base historica con fecha de publ
 
 ```mermaid
 erDiagram
-    PACIENTE ||-- || UBICACION : tiene
-    PACIENTE ||-- || SERVICIOS_SALUD: is
+    PACIENTE ||--|| UBICACION : tiene
+    PACIENTE ||-- || SERVICIOS_SALUD: vive
     PACIENTE ||--o{ COMORBILIDADES : padece  
     PACIENTE ||-- || DIAGNOSTICO: tiene
     PACIENTE {
