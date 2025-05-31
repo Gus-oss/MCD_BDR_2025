@@ -9,10 +9,10 @@ La base de datos de Covid-19 seleccionada es la base historica con fecha de publ
 
 ```mermaid
 erDiagram
-    PACIENTE ||--o{ COMORBILIDADES : places
-    PACIENTE ||--o{ UBICACION : is
-    PACIENTE ||--o{ SERVICIOS_SALUD: is
-    PACIENTE ||--o{ DIAGNOSTICO: is
+    PACIENTE ||-- || UBICACION : tiene
+    PACIENTE ||-- || SERVICIOS_SALUD: is
+    PACIENTE ||--o{ COMORBILIDADES : padece  
+    PACIENTE ||-- || DIAGNOSTICO: tiene
     PACIENTE {
         string ID_REGISTRO
         string FECHA_ACTUALIZACION
