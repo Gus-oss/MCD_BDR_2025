@@ -80,3 +80,7 @@ erDiagram
     }
 ````
 
+_*Notas:*_
+- Me falta cambiar los tipos de datos que estan, ya pregunte solo falta esperar que me dice el Dr.
+- Se que es "diferente" a como esta en la teoria, es decir, las relaciones no estan con rombos, los atributos no estan en elipses , quiero saber si asi me lo puede aceptar sin bajar puntos debido a que no encuentro como modificarlo, preguntar.
+- Falta añadir la parte del dominio, preguntar si se la tengo que agregar al diagrama o al documento. 
