@@ -15,3 +15,4 @@ Las siglas SGBD significan _Sistema de Gestión de base de datos_ y nos ayuda a 
 
 - Więch, A. (2024, 23 junio). ¿Qué es un SGBD? LearnSQL.es. https://learnsql.es/blog/que-es-un-sgbd/
 - Erickson, J. (2024, 29 agosto). MySQL: Understanding What It Is and How It’s Used. https://www.oracle.com/mx/mysql/what-is-mysql/
+- De Salud, S. (s. f.). Datos abiertos bases históricas. gob.mx. https://www.gob.mx/salud/documentos/datos-abiertos-bases-historicas-direccion-general-de-epidemiologia
