@@ -15,12 +15,12 @@ erDiagram
     PACIENTE ||-- || DIAGNOSTICO: tiene
     PACIENTE {
         string ID_REGISTRO
-        string FECHA_ACTUALIZACION
-        string FECHA_INGRESO 
-        string FECHA_SINTOMAS
+        date FECHA_ACTUALIZACION
+        date FECHA_INGRESO 
+        date FECHA_SINTOMAS
         string FECHA_DEF
         string SEXO    
-        string EDAD
+        int EDAD
         string EMBARAZO
         string NACIONALIDAD
         string HABLA_LENGUA_INDIG
