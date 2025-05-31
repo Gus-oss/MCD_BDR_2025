@@ -14,10 +14,41 @@ erDiagram
     PACIENTE ||--o{ SERVICIOS_SALUD: is
     PACIENTE ||--o{ DIAGNOSTICO: is
     PACIENTE {
-        string ID_REGISTRO       
-        string ORIGEN
-        string sector
+        string ID_REGISTRO
+        string FECHA_ACTUALIZACION
+        string FECHA_INGRESO 
+        string FECHA_SINTOMAS
+        string FECHA_DEF
+        string SEXO    
+        string EDAD
+        string EMBARAZO
+        string NACIONALIDAD
+        string HABLA_LENGUA_INDIG
+        string INDIGENA
+        string MIGRANTE    
+
     }
+
+    UBICACION
+    UBICACION {
+        string ENTIDAD_NAC
+        string ENTIDAD_RES
+        string MUNICIPIO_RES
+        string PAIS_NACIONALIDAD
+        string PAIS_ORIGEN
+
+    }
+
+    SERVICIOS_SALUD
+    SERVICIOS_SALUD {
+        string ORIGEN
+        string SECTOR
+        string ENTIDAD_UM
+        string TIPO_PACIENTE
+
+
+    }
+
     COMORBILIDADES  
     COMORBILIDADES  {
         int Intubado
@@ -31,6 +62,21 @@ erDiagram
         int OBESIDAD
         int RENAL_CRONICA
         int TABAQUISMO
+    }
+
+    DIAGNOSTICO
+    DIAGNOSTICO {
+        string TOMA_MUESTRA_LAB
+        string  RESULTADO_PCR 
+        string RESULTADO_PCR_COINFECCION
+        string TOMA_MUESTRA_ANTIGENO
+        string RESULTADO_ANTIGENO
+        string CLASIFICACION_FINAL_COVID
+        string CLASIFICACION_FINAL_FLU
+        string UCI
+        string OTRO_CASO
+
+
     }
 ````
 
