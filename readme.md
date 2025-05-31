@@ -8,4 +8,5 @@ _**Autor:**_ Gustavo de Jesús Escobar Mata.
 Este es el repositorio de la materide Bases de Datos Relacionales de la Maestria de Ciencia de Datos de la Facultad de Ciencias Fisico Matematicas de la Universidad Autonoma de Nuevo León que imparte el Dr. [Alberto Benavides](https://github.com/albertobenavides)
 
 **Tareas**
-- [Tarea 1](Tarea1_Investigación.md)
+- [Tarea 1. Investigación sobre bases de datos.](Tarea1_Investigación.md)
+- [Tarea 2. Diagrama entidad-relación.](Tarea2_EntidadRelacion.md)
