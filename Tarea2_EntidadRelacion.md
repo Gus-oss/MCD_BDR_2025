@@ -5,7 +5,7 @@ _*Objetivos:*_
 - Mostrar el dominio de los atributos.
 
 ## Modelo entidad-relación de la base de datos Covid-19 correspondiente a la fecha del 27 de Mayo del 2025. 
-La base de datos de Covid-19 seleccionada es la base historica con fecha de publicación del 27 de Mayo del 2025. 
+La base de datos de Covid-19 seleccionada es la base historica con fecha de publicación del 27 de Mayo del 2025. A continuación se mostrara su correspondiente diagrama entidad-relación
 
 ```mermaid
 erDiagram
@@ -19,32 +19,32 @@ erDiagram
         date FECHA_INGRESO 
         date FECHA_SINTOMAS
         string FECHA_DEF
-        string SEXO    
+        int SEXO    
         int EDAD
-        string EMBARAZO
-        string NACIONALIDAD
-        string HABLA_LENGUA_INDIG
-        string INDIGENA
-        string MIGRANTE    
+        int EMBARAZO
+        int NACIONALIDAD
+        int HABLA_LENGUA_INDIG
+        int INDIGENA
+        int MIGRANTE    
 
     }
 
     UBICACION
     UBICACION {
-        string ENTIDAD_NAC
-        string ENTIDAD_RES
-        string MUNICIPIO_RES
-        string PAIS_NACIONALIDAD
-        string PAIS_ORIGEN
+        int ENTIDAD_NAC
+        int ENTIDAD_RES
+        int MUNICIPIO_RES
+        int PAIS_NACIONALIDAD
+        int PAIS_ORIGEN
 
     }
 
     SERVICIOS_SALUD
     SERVICIOS_SALUD {
-        string ORIGEN
-        string SECTOR
-        string ENTIDAD_UM
-        string TIPO_PACIENTE
+        int ORIGEN
+        int SECTOR
+        int ENTIDAD_UM
+        int TIPO_PACIENTE
 
 
     }
@@ -52,7 +52,7 @@ erDiagram
     COMORBILIDADES  
     COMORBILIDADES  {
         int Intubado
-        string Neumonia
+        int Neumonia
         int Diabetes
         int EPOC
         int ASMA
@@ -66,21 +66,19 @@ erDiagram
 
     DIAGNOSTICO
     DIAGNOSTICO {
-        string TOMA_MUESTRA_LAB
-        string  RESULTADO_PCR 
-        string RESULTADO_PCR_COINFECCION
-        string TOMA_MUESTRA_ANTIGENO
-        string RESULTADO_ANTIGENO
-        string CLASIFICACION_FINAL_COVID
-        string CLASIFICACION_FINAL_FLU
-        string UCI
-        string OTRO_CASO
+        int TOMA_MUESTRA_LAB
+        int  RESULTADO_PCR 
+        int RESULTADO_PCR_COINFECCION
+        int TOMA_MUESTRA_ANTIGENO
+        int RESULTADO_ANTIGENO
+        int CLASIFICACION_FINAL_COVID
+        int CLASIFICACION_FINAL_FLU
+        int UCI
+        int OTRO_CASO
 
 
     }
 ````
 
 _*Notas:*_
-- Me falta cambiar los tipos de datos que estan, ya pregunte solo falta esperar que me dice el Dr.
-- Se que es "diferente" a como esta en la teoria, es decir, las relaciones no estan con rombos, los atributos no estan en elipses , quiero saber si asi me lo puede aceptar sin bajar puntos debido a que no encuentro como modificarlo, preguntar.
 - Falta añadir la parte del dominio, preguntar si se la tengo que agregar al diagrama o al documento. 
