@@ -80,5 +80,8 @@ erDiagram
     }
 ````
 
-_*Notas:*_
-- Falta añadir la parte del dominio, preguntar si se la tengo que agregar al diagrama o al documento. 
+Cabe mencionar que la base de datos se encuentra codificada mediante un catalago, por este motivo la mayoria de las variables de la base de datos son de caracter entero.
+
+## Dominio de los atributos.
+
+En esta sección se mostrara un ejemplo de una muestra de la base de datos. 
