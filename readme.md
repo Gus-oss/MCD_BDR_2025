@@ -10,3 +10,4 @@ Este es el repositorio de la materide Bases de Datos Relacionales de la Maestria
 **Tareas**
 - [Tarea 1. Investigación sobre bases de datos.](Tarea1_Investigación.md)
 - [Tarea 2. Diagrama entidad-relación.](Tarea2_EntidadRelacion.md)
+- [Tarea 3. Modelo relacional.](Tarea3_ModeloRelacional.md)
