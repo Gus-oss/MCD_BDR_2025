@@ -84,4 +84,49 @@ Cabe mencionar que la base de datos se encuentra codificada mediante un catalago
 
 ## Dominio de los atributos.
 
-En esta sección se mostrara un ejemplo de una muestra de la base de datos. 
+En esta sección se mostrara un ejemplo de una muestra de la base de datos.
+
+| **Atributo**     | **Dominio**                           |
+|--------------|---------------------------------------|
+|*FECHA_ACTUALIZACION*   | '27/05/2025'     |
+|*ID_REGISTRO*     | "167f1a"         |
+|*ORIGEN*    | "1"; Usmer                        |
+|*SECTOR*        | "12" ;SSA        |
+|*ENTIDAD_UM*         | "1"; Aguascalientes          |
+|*SEXO*        | "2"; Hombre      |
+|*ENTIDAD_NAC*      | "1"; Aguascalientes                  |
+|*ENTIDAD_RES*      | "1"; Aguascalientes              |
+|*MUNICIPIO_RES*      | "3";Calvillo                  |
+|*TIPO_PACIENTE*      | "1";Ambulatorio                   |
+|*FECHA_INGRESO*      | "21/04/2025"                |
+|*FECHA_SINTOMAS*      | "20/04/2025"               |
+|*FECHA_DEF*      | "9999-99-99";No especificado                  |
+|*INTUBADO*      | "97" ; No aplica             |
+|*NEUMONIA*      | "2"; No                   |
+|*EDAD*      | "8"                   |
+|*NACIONALIDAD*      | "1"; Mexicana                |
+|*EMBARAZO*      | "97"; No aplica                |
+|*HABLA_LENGUA_INDIG* | "2"; No |
+|*INDIGENA* | "2"; No | 
+|*DIABETES* | "2"; No |
+|*EPOC* | "2"; No | 
+|*ASMA* | "2"; No | 
+|*INMUSUPR* | "2"; No | 
+|*HIPERTENSION* | "2"; No | 
+|*OTRA_COM* | "2"; No |
+|*CARDIOVASCULAR* | "2"; No | 
+|*OBESIDAD* | "2"; No | 
+|*RENAL_CRONICA* | "2"; No | 
+|*TABAQUISMO* | "2"; No | 
+|*OTRO_CASO* | "2"; No |
+|*TOMA_MUESTRA_LAB* | "2"; No |
+|*RESULTADO_PCR* | "997" ; No aplica (caso sin muestra) |
+|*RESULTADO_PCR_COINFECCION* | "997"; No aplica (caso sin muestra) |
+|*TOMA_MUESTRA_ANTIGENO* | "2"; No aplica |
+|*RESULTADO_ANTIGENO* | "97" | 
+|*CLASIFICACION_FINAL_COVID* | "6" | 
+|*CLASIFICACION_FINAL_FLU* | "6" |
+|*MIGRANTE* | "99" | 
+|*PAIS_NACIONALIDAD* | "Méxicana" | 
+|*PAIS_ORIGEN* | "97" | 
+|*UCI* | "97" | 
