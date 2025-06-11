@@ -117,7 +117,11 @@ Algunas operaciónes del algebra relacional que se utilizaran para la base de da
 ### Proyección.
 *Consulta:* Obtener únicamente los identificadores de los registros y las edades de los pacientes registrados.
 
-*Expresión:* $\pi_{\text{ID\_REGISTRO},\text{EDAD}}(\text{PACIENTE})$
+*Expresión:* 
+$$
+\displaystyle
+ \left (\pi_{\text{ID\_REGISTRO},\text{EDAD}}(\text{PACIENTE}) \right)
+$$
 
 
 *Explicación:
@@ -136,4 +140,13 @@ Algunas operaciónes del algebra relacional que se utilizaran para la base de da
 
 *Explicación:
 
+
+Math block:
+
+$$
+\pi_{\text{ID\_REGISTRO}, \text{EDAD}} 
+\leq 
+\left( \sum_{k=1}^n a_k^2 \right) 
+\left( \sum_{k=1}^n b_k^2 \right)
+$$
 
