@@ -136,6 +136,8 @@ $$
 *Consulta:* Obtener todos los pacientes que tienen diabetes o hipertensión
 
 *Expresión:* 
+
+
 $$
 \displaystyle
 \pi_{ID\_REGISTRO} \left( 
@@ -146,6 +148,7 @@ $$
   \sigma_{HIPERTENCION=1}(COMORBILIDADES) 
 \right)
 $$
+
 
 *Explicación:*
 
