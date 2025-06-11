@@ -102,3 +102,38 @@ Se mostrara a continuación las tablas de relaciones de la base de datos Covid-1
 | PRIMARY KEY     | (ID_REGISTRO, ID_COMORBILIDAD) |
 
 ---
+
+## Operaciones del algebra relacional. 
+
+Algunas operaciónes del algebra relacional que se utilizaran para la base de datos de Covid-19 son: selección, proyección, unión y join.
+
+### Selección.
+*Consulta:* Obtener los pacientes del sexo femenino que tienen obesidad.
+
+*Expresión:* $\sigma_{\text{SEXO} = 1 \land \text{OBESIDAD} = 1} \left( \text{PACIENTE} \bowtie \text{PACIENTE\_COMORBILIDAD} \bowtie \text{COMORBILIDADES} \right)$
+
+*Explicación:*
+
+### Proyección.
+*Consulta:* Obtener únicamente los identificadores de los registros y las edades de los pacientes registrados.
+
+*Expresión:* $\pi_{\text{ID\_REGISTRO},\text{EDAD}}(\text{PACIENTE})$
+
+
+*Explicación:
+
+### Unión
+*Consulta:* Obtener todos los pacientes que tienen diabetes o hipertensión
+
+*Expresión:* $ \pi_{\text{ID\_REGISTRO}}(\sigma_{\text{DIABETES}=1}(\text{COMORBILIDADES})) \cup  \pi_{\text{ID\_REGISTRO}}(\sigma_{\text{HIPERTENCION}=1}(\text{COMORBILIDADES})) $
+
+*Explicación:
+
+### Join
+*Consulta:* Obtener información combinada de los pacientes y el sector de salud donde fueron atendidos. 
+
+*Expresión:* $ \text{PACIENTE} \bowtie \text{SERVICIOS\_SALUD} $
+
+*Explicación:
+
+
