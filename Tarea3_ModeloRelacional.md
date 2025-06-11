@@ -112,11 +112,14 @@ Algunas operaciónes del algebra relacional que se utilizaran para la base de da
 *Consulta:* Obtener los pacientes del sexo femenino que tienen obesidad.
 
 *Expresión:* 
+
+
 $$
 \displaystyle
 \sigma_{\text{SEXO} = 1 \land \text{OBESIDAD} = 1}
 \left( PACIENTE \bowtie PACIENTE\_COMORBILIDAD \bowtie COMORBILIDADES \right)
 $$
+
 
 *Explicación:*
  
@@ -125,10 +128,14 @@ $$
 *Consulta:* Obtener únicamente los identificadores de los registros y las edades de los pacientes registrados.
 
 *Expresión:* 
+
+
 $$
 \displaystyle
 \pi_{ID\_REGISTRO , EDAD}(PACIENTE)
 $$
+
+
 *Explicación:*
 
 ### Unión
@@ -158,11 +165,13 @@ $$
 
 *Expresión:* 
 
+
 $$
 \displaystyle
  PACIENTE
 \bowtie 
 SERVICIOS\_SALUD 
 $$
+
 
 *Explicación:*
