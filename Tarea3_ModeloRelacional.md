@@ -147,13 +147,14 @@ $$
 \right)
 $$
 
-*Explicación:
+*Explicación:*
 
 ### Join
 ---
 *Consulta:* Obtener información combinada de los pacientes y el sector de salud donde fueron atendidos. 
 
 *Expresión:* 
+
 $$
 \displaystyle
  PACIENTE
