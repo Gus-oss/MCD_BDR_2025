@@ -121,7 +121,7 @@ $$
 $$
 
 
-*Explicación:*
+*Explicación:*  Selecciona los registros que son del sexo femenino (SEXO = 1) y que presentan obesidad (OBESIDAD = 1), uniendo la informacion de las tablas PACIENTE,  PACIENTE, PACIENTE_COMORBILIDAD y COMORBILIDADES.
  
 ### Proyección.
 ---
@@ -136,7 +136,7 @@ $$
 $$
 
 
-*Explicación:*
+*Explicación:* Se proyectan únicamente los atributos ID_REGISTRO y EDAD de la tabla PACIENTE.
 
 ### Unión
 ---
@@ -157,7 +157,7 @@ $$
 $$
 
 
-*Explicación:*
+*Explicación:* Se seleccionan los identificadores de los pacientes (ID_REGISTRO) que tienen diabetes (DIABETES = 1) y los identificadores de los que tienen hipertensión (HIPERTENCION = 1) a partir de la tabla COMORBILIDADES. Posteriormente, se aplica la unión de ambos conjuntos para obtener una única lista con los registros de todos los pacientes que tienen al menos una de las dos condiciones.
 
 ### Join
 ---
@@ -174,4 +174,4 @@ SERVICIOS\_SALUD
 $$
 
 
-*Explicación:*
+*Explicación:* Se realiza un join entre las relaciones PACIENTE y SERVICIOS_SALUD. Esta operación combina las tuplas de ambas tablas que tienen valores coincidentes en los atributos comunes.
