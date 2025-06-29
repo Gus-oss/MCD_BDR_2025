@@ -12,3 +12,4 @@ Este es el repositorio de la materide Bases de Datos Relacionales de la Maestria
 - [Tarea 2. Diagrama entidad-relación.](Tarea2_EntidadRelacion.md)
 - [Tarea 3. Modelo relacional.](Tarea3_ModeloRelacional.md)
 - [Tarea 4. Base de datos Covid-19](Tarea4_BaseDeDatos.md)
+- [Tarea 5 y 6. Consultas a la base de datos Covid-19](Tarea5-6_Consultas.md)
