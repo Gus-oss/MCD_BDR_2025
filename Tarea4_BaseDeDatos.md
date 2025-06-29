@@ -9,4 +9,4 @@
 La base de datos se creo a partir de las  tareas de modelo relacional y entidad-relación. 
 ## Visualización.
 A continuación se mostrara algunos registros de alunas columnas de la base de datos.
-![alt text](Imagenes\image.png)
+![Base de datos](Imagenes\image.png)
