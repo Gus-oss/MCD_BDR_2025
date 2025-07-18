@@ -13,3 +13,5 @@ Este es el repositorio de la materide Bases de Datos Relacionales de la Maestria
 - [Tarea 3. Modelo relacional.](Tarea3_ModeloRelacional.md)
 - [Tarea 4. Base de datos Covid-19](Tarea4_BaseDeDatos.md)
 - [Tarea 5 y 6. Consultas a la base de datos Covid-19](Tarea5-6_Consultas.md)
+- [Tarea 7. Incosistencias y modificaciones de la base de datos](Tarea7_IncosistenciasModificaciones.md)
+- [Tarea 8. Joins](Tarea8_Joins.md)
