@@ -255,7 +255,7 @@ CREATE TABLE cat_municipios (
 );
 ```
 
-## Inner join 
+## Inner Join 
 Se crea una vista llamada vista_prom_edad_2025, en la cual se relaciona la tabla de casos de Covid-19 del año 2025 con el catálogo de entidades usando la clave de entidad para obtener el nombre del estado. Filtra los registros con edades válidad, entre 0 y 120 años y agrupa los resultados por entidad para calcular el promedio de edad de los pacientes por estado redondeando a una decimal. 
 
  ```sql 
@@ -268,4 +268,29 @@ FROM covid19mexico2025 c
 INNER JOIN cat_entidades e ON c.ENTIDAD_RES = e.CLAVE_ENTIDAD
 WHERE c.EDAD BETWEEN 0 AND 120
 GROUP BY c.ENTIDAD_RES, e.ENTIDAD_FEDERATIVA;
+```
+
+## Left Join
+El siguiente codigo hace una consulta convinada entre la tabla covid19mexico2020 y la tabla creada cat_origen y muestra la informacion de los primeros 100 registros de ambas columnas. 
+ ```sql 
+SELECT 
+  c.ID_REGISTRO,
+  c.ORIGEN,
+  o.DESCRIPCION AS DESCRIPCION_ORIGEN
+FROM covid19mexico2025 c
+LEFT JOIN cat_ORIGEN o ON c.ORIGEN = o.CLAVE
+LIMIT 100;
+```
+
+## Right Join
+En esta consulta pedimos los primeros 100 registros que coincidad entre la columna sector de la taba covid19mexico2021 y la columna clave del catálogo cat_sector. Si no hay coincidencia en la tabla, el catálogo sí se mostrará completo.
+ ```sql 
+SELECT 
+  c.ID_REGISTRO,
+  c.SECTOR,
+  s.DESCRIPCION AS DESCRIPCION_SECTOR
+FROM covid19mexico2021 c
+RIGHT JOIN cat_SECTOR s ON c.SECTOR = s.CLAVE
+LIMIT 100;
+
 ```
