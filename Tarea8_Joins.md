@@ -294,3 +294,44 @@ RIGHT JOIN cat_SECTOR s ON c.SECTOR = s.CLAVE
 LIMIT 100;
 
 ```
+
+## Subconsulta
+
+ ```sql 
+SELECT 
+   COUNT(*) AS Numeros_de_pacientes_con_covid_en_2025,
+   (select COUNT(*) AS Personas_con_diabetes
+    from covid19mexico2025 c
+    where Diabetes = 1 AND CLASIFICACION_FINAL_COVID = 3
+   ) AS Pacientes_de_COVID-19_con_diabetes
+FROM covid19mexico2025 c
+WHERE CLASIFICACION_FINAL_COVID = 3;
+```
+Esta subconsulta nos permite obtener el numero de pacientes que cuentan con Diabetes y cuentan con Covid-19. El resultado de esta consulta fue un total de 33,896 pacientes de la base de datos cuentan con covid-19 y de ellos 4,648 cuentan con diabetes.
+
+ ```sql 
+SELECT 
+   COUNT(*) AS Numeros_de_pacientes_covid,
+   (
+      select COUNT(*) 
+      from covid19mexico2025 c2
+      where CLASIFICACION_FINAL_COVID = 3
+      AND FECHA_DEF IS NOT NULL
+      AND FECHA_DEF != '9999-99-99'
+   ) AS Numero_pacientes_fallecidos, 
+    ROUND (
+      (
+          (
+            SELECT count(*)
+            FROM covid19mexico2025 c3
+            where CLASIFICACION_FINAL_COVID = 3
+            AND FECHA_DEF IS NOT NULL
+            AND FECHA_DEF != '9999-99-99'
+          )* 100.0
+      ) / count(*),
+      2  
+    ) AS Porcentaje_fallecimiento
+FROM covid19mexico2025 c
+WHERE CLASIFICACION_FINAL_COVID = 3;
+```
+Esta consulta nos permite obtener el numero de pacietnes fallecidos del numero de pacientes totales de la base de datos que tienen covid-19 y nos da el porcentaje que esto representa. El resultado de la consulta es de 33,896 pacientes con covid-19 fallecieron 1,976 lo que equivale al 5.83%.
